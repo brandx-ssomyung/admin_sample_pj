@@ -4,12 +4,11 @@
     <h2>Essential Links</h2>
     <ul>
       <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
-        </a>
+<!-- <video autoplay="autoplay" loop="loop" muted="muted" webkit-playsinline="webkit-playsinline" playsinline="playsinline"> -->
+       <video autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline"> 
+      <source src="http://mulawear.jpg3.kr//phps/video/main.mp4" type="video/mp4">
+
+      </video>
       </li>
       <li>
         <a
@@ -79,16 +78,39 @@
           awesome-vue
         </a>
       </li>
+      <button v-on:click="onButton()">sample button</button>
+      <label name="label_1"> {{ this.apiResultMsg }} </label>
     </ul>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'HelloWorld',
   data () {
     return {
       msg: 'Sample for Your Vue.js App'
+      , apiResultMsg:''
+    }
+  },
+  methods:{
+    onButton(){
+      console.log('called Button')
+      
+
+    axios({
+      method: 'get',
+      url: 'http://localhost:8081/test/demo',
+      headers: { 'Accept': '*/*',  }
+    })
+      .then(function (response) {
+        this.apiResultMsg = reponse.data
+      })
+        // axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10')
+        //     .then(res => this.apiResultMsg = res.data)
+        //     .catch(error => console.error(error))
     }
   }
 }
