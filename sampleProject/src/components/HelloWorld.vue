@@ -5,9 +5,8 @@
     <ul>
       <li>
 <!-- <video autoplay="autoplay" loop="loop" muted="muted" webkit-playsinline="webkit-playsinline" playsinline="playsinline"> -->
-       <video autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline"> 
-      <source src="http://mulawear.jpg3.kr//phps/video/main.mp4" type="video/mp4">
-
+      <video autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline"> 
+        <source src="http://mulawear.jpg3.kr//phps/video/main.mp4" type="video/mp4">
       </video>
       </li>
       <li>
