@@ -4,9 +4,7 @@
 name: Admin Web Build2
 
 on:
-  push:
-    branches: 
-      - master
+  [push]
 
 jobs:
   build_and_deploy:
