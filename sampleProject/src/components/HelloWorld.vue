@@ -90,7 +90,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Sample for Your Vue.js App'
+      msg: 'S  TTTT '
       , apiResultMsg:''
     }
   },
