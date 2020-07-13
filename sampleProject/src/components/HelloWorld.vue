@@ -90,7 +90,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: '  TTTT '
+      msg: '  TTTT AA '
       , apiResultMsg:''
     }
   },
